@@ -322,6 +322,16 @@ h3 {
   background: linear-gradient(135deg, rgba(122, 162, 255, 0.14), transparent 44%);
 }
 
+.perk-card.muted {
+  opacity: 0.82;
+  border-style: dashed;
+}
+
+.perk-card.muted .perk-type,
+.perk-card.muted .perk-note {
+  color: var(--muted);
+}
+
 .progress-ribbon {
   position: absolute;
   top: 18px;
