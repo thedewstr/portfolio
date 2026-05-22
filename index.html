@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Dewey | IT Applications Specialist</title>
+  <meta name="description" content="Portfolio for Ryan Dewey: Applications Specialist, Automation Builder, and Happy Helper." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <span class="logo-mark">RD</span>
+      <span class="logo-text">Ryan Dewey</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+
+    <nav class="site-nav">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Loadout</a>
+      <a href="#perks">Perks</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">IT Applications Specialist | Automation Builder | Professional Problem Unsticker</p>
+        <h1>Creating practical IT tools for messy real-world problems.</h1>
+        <p class="hero-text">
+          I hang around the intersection of application support, automation, endpoint troubleshooting,
+          SaaS administration, and internal tooling. I like getting my hands dirty through streamlining processes, 
+          building helpful scripts, and generally making life easier for myself and the folks I work with.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn primary" href="#projects">View Project Dex</a>
+          <a class="btn secondary" href="#contact">Open Contact Terminal</a>
+        </div>
+      </div>
+
+      <aside class="status-card" aria-label="Profile status card">
+        <div class="card-header">
+          <span class="dot"></span>
+          <span>PLAYER_PROFILE.EXE</span>
+        </div>
+        <div class="stat-line">
+          <span>Class</span>
+          <strong>IT Applications Specialist</strong>
+        </div>
+        <div class="stat-line">
+          <span>Tag Skills</span>
+          <strong>Automation / Support / SaaS</strong>
+        </div>
+        <div class="stat-line">
+          <span>Signature Move</span>
+          <strong>Repetition into Automations</strong>
+        </div>
+        <div class="stat-line">
+          <span>Current Quest</span>
+          <strong>Building Better Tools</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section two-column">
+      <div>
+        <p class="eyebrow">About.exe</p>
+        <h2>Support-minded, automation-curious, and stubborn (in a good way).</h2>
+      </div>
+      <div class="panel">
+        <p>
+          I’m an IT professional with hands-on experience in financial, manufacturing, education, and telecommunications
+          environments. I have a particular focus on application support, endpoint troubleshooting, documentation,
+          process improvement, vendor coordination, and automation.
+        </p>
+        <p>
+          I recently completed my MBA in Information Technology Management, and I’m especially
+          interested in work where technology improves how people actually get things done.
+        </p>
+        <p>
+          Outside the formal job-description box, I've been known to tinker with AI, dashboards, deployment scripts,
+          cloud-backed static site tools, and the occasional bit of retro-tech. 
+        </p>
+        <p>
+            I love discovering the "<strong>why</strong>" behind the "<strong>what</strong>".
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Project Dex</p>
+        <h2>Featured work</h2>
+        <p>
+          A few examples of the kind of practical systems, scripts, and experiments I’ve worked on.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card">
+        <div class="project-type">Homelab Base Camp</div>
+        <h3>Homelab Monitoring & Smart Infrastructure</h3>
+        <p>
+            Built and maintained a personal homelab environment with smart home automation,
+            camera monitoring, self-hosted services, and infrastructure experimentation.
+        </p>
+        <ul>
+            <li>Configured Home Assistant for home automation workflows</li>
+            <li>Used Frigate for local camera/NVR-style monitoring</li>
+            <li>Experimented with self-hosted tools, services, and networked systems</li>
+        </ul>
+        <div class="tags">
+            <span>Home Assistant</span>
+            <span>Frigate</span>
+            <span>Homelab</span>
+            <span>Self-Hosting</span>
+        </div>
+        </article>
+
+        <article class="project-card">
+        <div class="project-type">Multi-Module Bot Platform</div>
+        <h3>Miraidon Discord Bot</h3>
+        <p>
+            Built a modular Discord bot platform with automation, moderation, economy systems,
+            music playback, Reddit/RSS monitoring, giveaways, role rewards, and Pokémon-inspired
+            community features.
+        </p>
+        <ul>
+            <li>Designed modular cog-based architecture</li>
+            <li>Built JSON-backed persistence for economy and collection systems</li>
+            <li>Integrated APIs, scheduled tasks, and interactive Discord commands</li>
+        </ul>
+        <div class="tags">
+            <span>Python</span>
+            <span>discord.py</span>
+            <span>APIs</span>
+            <span>Async</span>
+        </div>
+        </article>
+
+        <article class="project-card">
+        <div class="project-type">API Integration Quest</div>
+        <h3>Webex → SysAid Ticket Automation</h3>
+        <p>
+            Built an automation workflow to bridge Webex messages into SysAid ticket creation,
+            helping convert support requests from chat into trackable service desk records.
+        </p>
+        <ul>
+            <li>Worked through API authentication and token handling</li>
+            <li>Mapped chat/request data into ticket fields</li>
+            <li>Tested category assignment and ticket creation behavior</li>
+        </ul>
+        <div class="tags">
+            <span>Python</span>
+            <span>Webex API</span>
+            <span>SysAid API</span>
+            <span>Automation</span>
+        </div>
+        </article>
+
+    <article class="project-card">
+    <div class="project-type">Endpoint Automation Loadout</div>
+    <h3>RMM PowerShell Automation Toolkit</h3>
+    <p>
+        Developed and refined PowerShell scripts for endpoint maintenance, software deployment,
+        uninstall workflows, installer extraction, logging, and troubleshooting through RMM tooling.
+    </p>
+    <ul>
+        <li>Automated repetitive Windows endpoint tasks</li>
+        <li>Built logging and validation into deployment scripts</li>
+        <li>Handled installer sequencing, extraction, and cleanup</li>
+    </ul>
+    <div class="tags">
+        <span>PowerShell</span>
+        <span>NinjaRMM</span>
+        <span>Windows</span>
+        <span>Scripting</span>
+    </div>
+    </article>
+
+        <article class="project-card">
+        <div class="project-type">Leadership Side Quest</div>
+        <h3>IT Intern Mentorship & Exam Simulator</h3>
+        <p>
+            Mentored a budding IT intern by building structured learning material and an exam-style simulator
+            around practical support skills, networking and cybersecurity basics, and real-world troubleshooting scenarios.
+        </p>
+        <ul>
+            <li>Translated support experience into teachable scenarios</li>
+            <li>Created repeatable study and review material</li>
+            <li>Supported skill-building through feedback and guided practice</li>
+        </ul>
+        <div class="tags">
+            <span>Leadership</span>
+            <span>Mentorship</span>
+            <span>Training Design</span>
+            <span>Cybersecurity Basics</span>
+        </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-type">Internal Tools Quest</div>
+          <h3>IT Wiki Establishment and Development</h3>
+          <p>
+            Created and maintained an internal IT wiki using SharePoint, focusing on documentation,
+            process improvement, and knowledge management to support the IT team, and by extension, end users.
+          </p>
+          <ul>
+            <li>Documentation systems thinking</li>
+            <li>Support workflow improvements</li>
+            <li>Knowledge management focus</li>
+          </ul>
+          <div class="tags">
+            <span>SharePoint</span>
+            <span>Documentation</span>
+            <span>IT Support</span>
+            <span>Process Improvement</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section two-column">
+      <div>
+        <p class="eyebrow">Loadout</p>
+        <h2>Tools, skills, and party roles</h2>
+      </div>
+
+      <div class="loadout-grid">
+        <div class="loadout-card">
+          <h3>Core Skills</h3>
+          <p>Application support, troubleshooting, documentation, endpoint workflows, process improvement, vendor coordination.</p>
+        </div>
+        <div class="loadout-card">
+          <h3>Automation</h3>
+          <p>PowerShell, Python, unattended installs, cleanup scripts, logging, deployment sequencing, RMM workflows.</p>
+        </div>
+        <div class="loadout-card">
+          <h3>Builder Energy</h3>
+          <p>Bots, dashboards, admin tools, static-site systems, game-inspired data tools, oddball hardware investigations.</p>
+        </div>
+        <div class="loadout-card">
+          <h3>Leadership & Mentorship</h3>
+          <p>Mentoring junior IT staff, creating training materials, translating technology into teachable concepts,
+           and empowering others through practical troubleshooting.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="perks" class="section">
+    <div class="section-heading">
+        <p class="eyebrow">Perks</p>
+        <h2>Degrees, certs, and unlocked achievements</h2>
+        <p>
+        Formal creds that back up my experience: business, technology management,
+        cybersecurity fundamentals, and practical IT support knowledge.
+        </p>
+    </div>
+
+    <div class="perks-grid">
+        <article class="perk-card featured">
+        <div class="perk-icon">🎓</div>
+        <div>
+            <p class="perk-type">Degree Unlocked</p>
+            <h3>MBA in Information Technology Management</h3>
+            <h3>(Western Governers University)</h3>
+            <p>
+            Graduate-level focus on aligning technology, business operations,
+            leadership, and process improvement.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card">
+        <div class="perk-icon">🎓</div>
+        <div>
+            <p class="perk-type">Degree Unlocked</p>
+            <h3>Bachelor’s Degree in Computer Science</h3>
+            <h3>(University of The People)</h3>
+            <p>
+            Undergraduate focus on programming, data structures, computer architecture, and software development principles.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card">
+        <div class="perk-icon">💻</div>
+        <div>
+            <p class="perk-type">Certification Badge</p>
+            <h3>CompTIA A+</h3>
+            <p>
+            IT support fundamentals, hardware, software, troubleshooting, operating systems, 
+            and best practices for end-user support.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card">
+        <div class="perk-icon">🌐</div>
+        <div>
+            <p class="perk-type">Certification Badge</p>
+            <h3>CompTIA Network+</h3>
+            <p>
+            Networking concepts, infrastructure, operations, security, 
+            and troubleshooting for IT professionals.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card">
+        <div class="perk-icon">🛡️</div>
+        <div>
+            <p class="perk-type">Certification Badge</p>
+            <h3>CompTIA Security+</h3>
+            <p>
+            Cybersecurity fundamentals, risk management, threat analysis, 
+            and best practices for securing IT environments.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card in-progress">
+        <div class="progress-ribbon">IN PROGRESS</div>
+        <div class="perk-icon">📘</div>
+        <div>
+            <p class="perk-type">Certification Quest</p>
+            <h3>ITIL 4 Foundation</h3>
+            <p>
+            Currently exploring IT service management fundamentals, including incident management,
+            change enablement, service value systems, and continual improvement.
+            </p>
+        </div>
+        </article>
+
+        <article class="perk-card in-progress">
+        <div class="progress-ribbon">IN PROGRESS</div>
+        <div class="perk-icon">🤖</div>
+        <div>
+            <p class="perk-type">Learning Quest</p>
+            <h3>AI Engineering & Workflow Automation</h3>
+            <p>
+            Exploring practical AI engineering concepts, including prompt design, API-assisted workflows,
+            automation planning, documentation generation, troubleshooting support, and AI-enhanced
+            internal tooling.
+            </p>
+        </div>
+        </article>
+
+    </div>
+    </section>
+
+    <section id="resume" class="section resume-section">
+      <div class="panel resume-panel">
+        <p class="eyebrow">Resume Scroll</p>
+        <h2>Prefer a more formal version?</h2>
+        <a class="btn primary" href="assets/resume.pdf">Download Resume</a>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <p class="eyebrow">Contact Terminal</p>
+      <h2>Open to roles where IT support, automation, and better tooling overlap.</h2>
+
+      <div class="contact-links">
+        <a href="mailto:ryan@nerdscave.org">ryan@nerdscave.org</a>
+        <a href="https://linkedin.com/in/radewey" aria-label="LinkedIn profile">LinkedIn</a>
+        <a href="https://github.com/thedewstr" aria-label="GitHub profile">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>© <span id="year"></span> Ryan Dewey</span>
+    <span>Pushing forward, one level at a time.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
