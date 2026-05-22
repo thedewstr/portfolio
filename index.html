@@ -385,6 +385,27 @@
     </div>
     </section>
 
+    <section id="notes" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Notes</p>
+        <h2>What others have said along the way</h2>
+        <p>
+          Selected feedback from colleagues and leadership.
+        </p>
+      </div>
+
+      <div class="quote-grid">
+        <blockquote class="quote-card">
+          <p>
+            “What sets Ryan apart is his willingness to step into challenges that others may avoid. Time and time again,
+            he has taken ownership of complex IT issues, working persistently until he not only finds a solution, but
+            often identifies ways to improve processes for the future.”
+          </p>
+          <footer>— Chief Strategy Officer, financial services organization</footer>
+        </blockquote>
+      </div>
+    </section>
+
     <section id="resume" class="section resume-section">
       <div class="panel resume-panel">
         <p class="eyebrow">Resume Scroll</p>
@@ -409,6 +430,27 @@
     <span>© <span id="year"></span> Ryan Dewey</span>
     <span>Pushing forward, one level at a time.</span>
   </footer>
+
+  <div class="terminal-widget" aria-live="polite">
+    <button class="terminal-toggle" id="terminalToggle">
+      💬 Access Terminal
+    </button>
+
+    <div class="terminal-panel" id="terminalPanel" aria-hidden="true">
+      <div class="terminal-header">
+        <div>
+          <p class="terminal-kicker">R.A.D Terminal</p>
+          <h3>Portfolio Guide</h3>
+        </div>
+        <button class="terminal-close" id="terminalClose" aria-label="Close terminal">×</button>
+      </div>
+
+      <div class="terminal-screen">
+        <div class="terminal-output" id="terminalOutput"></div>
+        <div class="terminal-options" id="terminalOptions"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
