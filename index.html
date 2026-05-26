@@ -150,15 +150,15 @@
         <article class="project-card">
         <div class="project-type">API Integration Quest</div>
         <h3>Webex → SysAid Ticket Automation</h3>
-        <p>
-            Built an automation workflow to bridge Webex phone calls into SysAid ticket creation,
-            helping convert support requests from untracked phone calls into measurable service desk records.
-        </p>
-        <ul>
+          <p>
+            Built a Webex-to-SysAid API connection that automatically created tickets when
+            someone called the IT department, carrying relevant call details into the ticketing system.
+          </p>
+          <ul>
             <li>Worked through API authentication and token handling</li>
             <li>Mapped phone call data into ticket fields</li>
-            <li>Tested category assignment and ticket creation behavior</li>
-        </ul>
+            <li>Tested automatic ticket creation and category assignment behavior</li>
+          </ul>
         <div class="tags">
             <span>Python</span>
             <span>Webex API</span>
@@ -436,25 +436,39 @@
 
   <div class="terminal-widget" aria-live="polite">
     <button class="terminal-toggle" id="terminalToggle">
-      💬 Access Terminal
+      Access RAD Terminal
     </button>
 
     <div class="terminal-panel" id="terminalPanel" aria-hidden="true">
       <div class="terminal-header">
         <div>
-          <p class="terminal-kicker">R.A.D Terminal</p>
-          <h3>Portfolio Guide</h3>
+          <p class="terminal-kicker">RAD Terminal</p>
+          <h3>Portfolio Interface</h3>
         </div>
         <button class="terminal-close" id="terminalClose" aria-label="Close terminal">×</button>
       </div>
 
       <div class="terminal-screen">
-        <div class="terminal-output" id="terminalOutput"></div>
-        <div class="terminal-options" id="terminalOptions"></div>
+        <div class="terminal-output" id="terminalOutput" role="log" aria-live="polite"></div>
+        <div class="terminal-options" id="terminalOptions" aria-label="Quick terminal commands"></div>
+        <form class="terminal-form" id="terminalForm">
+          <label class="sr-only" for="terminalInput">Ask the RAD terminal about Ryan's portfolio</label>
+          <input
+            id="terminalInput"
+            class="terminal-input"
+            maxlength="700"
+            autocomplete="off"
+            placeholder="Ask about projects, skills, automation..."
+          />
+          <button class="terminal-send" type="submit">SEND</button>
+        </form>
       </div>
     </div>
   </div>
 
+  <script>
+    window.RAD_API_BASE_URL = "https://rad-api.nerdscave.org";
+  </script>
   <script src="script.js"></script>
 </body>
 </html>
