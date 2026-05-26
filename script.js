@@ -28,8 +28,7 @@ const radChatEndpoint = `${radApiBaseUrl}/api/chat`;
 
 const bootLines = [
   "RAD PORTFOLIO TERMINAL v0.1",
-  "PUBLIC DATA MODE: ENABLED",
-  "PRIVATE SYSTEM ACCESS: DISABLED",
+  "Hello. I am the R.A.D Terminal, a local AI assistant designed to provide insights into Ryan's projects, skills, and experience.",
   "Ask about Ryan's projects, skills, automation work, education, or contact options."
 ];
 
