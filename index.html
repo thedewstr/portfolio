@@ -256,152 +256,121 @@
       </div>
     </section>
 
-    <section id="perks" class="section">
-    <div class="section-heading">
-        <p class="eyebrow">Perks</p>
+    <section id="perks" class="section skilltree-section">
+      <div class="section-heading">
+        <p class="eyebrow">Skill Tree</p>
         <h2>Degrees, certs, and unlocked achievements</h2>
         <p>
-        Formal creds that back up my experience: business, technology management,
-        cybersecurity fundamentals, cloud administration, and practical IT support knowledge.
+          Formal creds that back up my experience: business, technology management,
+          cybersecurity fundamentals, cloud administration, and practical IT support knowledge.
         </p>
-    </div>
+      </div>
 
-    <div class="perks-grid">
-        <article class="perk-card featured">
-        <div class="perk-icon">🎓</div>
-        <div>
-            <p class="perk-type">Degree Unlocked</p>
-            <h3>MBA in Information Technology Management</h3>
-            <h3>(Western Governors University)</h3>
-            <p>
-            Graduate-level focus on aligning technology, business operations,
-            leadership, and process improvement.
-            </p>
-            <a class="perk-link" href="https://www.wgu.edu/alumni/commencement/e-diploma-verification/validate.html" target="_blank" rel="noopener">
-            Verify credential... (CeDiD: 26E0-0UFV-RBYD)
-            </a>
+      <div class="skilltree-shell">
+        <div class="skilltree-toolbar">
+          <p class="skilltree-progress"><strong id="skillUnlocked">7</strong> of <span id="skillTotal">10</span> perks unlocked</p>
+          <ul class="skilltree-legend" aria-label="Skill tree legend">
+            <li><span class="legend-dot unlocked" aria-hidden="true"></span>Unlocked</li>
+            <li><span class="legend-dot progress" aria-hidden="true"></span>In progress</li>
+            <li><span class="legend-dot retired" aria-hidden="true"></span>Retired</li>
+          </ul>
         </div>
-        </article>
 
-        <article class="perk-card">
-        <div class="perk-icon">🎓</div>
-        <div>
-            <p class="perk-type">Degree Unlocked</p>
-            <h3>Bachelor’s Degree in Computer Science</h3>
-            <h3>(University of The People)</h3>
-            <p>
-            Undergraduate focus on programming, data structures, computer architecture, and software development principles.
-            </p>
-            <a class="perk-link" href="https://www.linkedin.com/in/radewey/" target="_blank" rel="noopener">
-            View on LinkedIn...
-            </a>
+        <div class="skilltree-canvas" id="skilltreeCanvas">
+          <svg class="skilltree-links" id="skilltreeLinks" aria-hidden="true" focusable="false"></svg>
+          <div class="skilltree-stars" aria-hidden="true"></div>
+
+          <button class="skill-node is-unlocked" type="button" data-skill="aplus" style="--x:50%;--y:85%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🖥️</span></span>
+            <span class="node-text">
+              <span class="node-name">CompTIA A+</span>
+              <span class="node-state">Certified</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked" type="button" data-skill="netplus" style="--x:31%;--y:62%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🌐</span></span>
+            <span class="node-text">
+              <span class="node-name">CompTIA Network+</span>
+              <span class="node-state">Certified</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked" type="button" data-skill="secplus" style="--x:69%;--y:62%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🛡️</span></span>
+            <span class="node-text">
+              <span class="node-name">CompTIA Security+</span>
+              <span class="node-state">Certified</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked is-new" type="button" data-skill="cloudplus" style="--x:17%;--y:34%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">☁️</span></span>
+            <span class="node-text">
+              <span class="node-name">CompTIA Cloud+</span>
+              <span class="node-state">Newly unlocked</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked" type="button" data-skill="azure" style="--x:83%;--y:34%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🔷</span></span>
+            <span class="node-text">
+              <span class="node-name">Azure Administrator Associate</span>
+              <span class="node-state">Certified · AZ-104</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked is-degree" type="button" data-skill="bs" style="--x:50%;--y:57%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🎓</span></span>
+            <span class="node-text">
+              <span class="node-name">B.S. Computer Science</span>
+              <span class="node-state">Degree</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-unlocked is-degree" type="button" data-skill="mba" style="--x:50%;--y:29%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🎓</span></span>
+            <span class="node-text">
+              <span class="node-name">MBA, IT Management</span>
+              <span class="node-state">Degree</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-progress" type="button" data-skill="itil" style="--x:13%;--y:12%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">📘</span></span>
+            <span class="node-text">
+              <span class="node-name">ITIL 4 Foundation</span>
+              <span class="node-state">In progress</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-progress" type="button" data-skill="ai" style="--x:87%;--y:12%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">🤖</span></span>
+            <span class="node-text">
+              <span class="node-name">AI Engineering &amp; Automation</span>
+              <span class="node-state">In progress</span>
+            </span>
+          </button>
+
+          <button class="skill-node is-retired" type="button" data-skill="jncia" style="--x:9%;--y:72%" aria-pressed="false">
+            <span class="node-orb"><span class="node-glyph" aria-hidden="true">📡</span></span>
+            <span class="node-text">
+              <span class="node-name">Juniper JNCIA-Junos</span>
+              <span class="node-state">Retired</span>
+            </span>
+          </button>
         </div>
-        </article>
 
-        <article class="perk-card">
-        <div class="perk-icon">💻</div>
-        <div>
-            <p class="perk-type">Certification Badge</p>
+        <div class="skill-detail" id="skillDetail" aria-live="polite">
+          <span class="detail-glyph" aria-hidden="true">🖥️</span>
+          <div class="detail-copy">
+            <p class="detail-kicker">Certification · Unlocked</p>
             <h3>CompTIA A+</h3>
-            <p>
-            IT support fundamentals, hardware, software, troubleshooting, operating systems, 
-            and best practices for end-user support.
-            </p>
-            <a class="perk-link" href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/XVTLGYQFLGB158Q9" target="_blank" rel="noopener">
-            Verify credential...
-            </a>
+            <p>IT support fundamentals, hardware, software, troubleshooting, operating systems, and best practices for end-user support.</p>
+            <a class="perk-link" href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/XVTLGYQFLGB158Q9" target="_blank" rel="noopener">Verify credential...</a>
+          </div>
         </div>
-        </article>
-
-        <article class="perk-card">
-        <div class="perk-icon">🌐</div>
-        <div>
-            <p class="perk-type">Certification Badge</p>
-            <h3>CompTIA Network+</h3>
-            <p>
-            Networking concepts, infrastructure, operations, 
-            basic network security, and troubleshooting 
-            for IT professionals.
-            </p>
-            <a class="perk-link" href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/Q499DG7SW1141FV2" target="_blank" rel="noopener">
-            Verify credential...
-            </a>
-        </div>
-        </article>
-
-        <article class="perk-card">
-        <div class="perk-icon">🛡️</div>
-        <div>
-            <p class="perk-type">Certification Badge</p>
-            <h3>CompTIA Security+</h3>
-            <p>
-            Cybersecurity fundamentals, risk management, threat analysis, 
-            and best practices for securing IT environments.
-            </p>
-            <a class="perk-link" href="https://cp.certmetrics.com/CompTIA/en/public/verify/credential/HS4V9SFS01V1S4R2" target="_blank" rel="noopener">
-            Verify credential...
-            </a>
-        </div>
-        </article>
-
-        <article class="perk-card">
-        <div class="perk-icon">☁️</div>
-        <div>
-            <p class="perk-type">Certification Badge</p>
-            <h3>Microsoft Certified: Azure Administrator Associate</h3>
-            <p>
-            Azure administration across identity, governance, storage, compute,
-            and virtual networking, including resource monitoring, backup,
-            and access management (AZ-104).
-            </p>
-            <a class="perk-link" href="https://www.linkedin.com/in/radewey/details/certifications/" target="_blank" rel="noopener">
-            View on LinkedIn...
-            </a>
-        </div>
-        </article>
-
-        <article class="perk-card in-progress">
-        <div class="progress-ribbon">IN PROGRESS</div>
-        <div class="perk-icon">📘</div>
-        <div>
-            <p class="perk-type">Certification Quest</p>
-            <h3>ITIL 4 Foundation</h3>
-            <p>
-            Currently exploring IT service management fundamentals, including incident management,
-            change enablement, service value systems, and continual improvement.
-            </p>
-        </div>
-        </article>
-
-        <article class="perk-card in-progress">
-        <div class="progress-ribbon">IN PROGRESS</div>
-        <div class="perk-icon">🤖</div>
-        <div>
-            <p class="perk-type">Learning Quest</p>
-            <h3>AI Engineering & Workflow Automation</h3>
-            <p>
-            Exploring practical AI engineering concepts, including prompt design, API-assisted workflows,
-            automation planning, documentation generation, troubleshooting support, and AI-enhanced
-            internal tooling.
-            </p>
-        </div>
-        </article>
-        <article class="perk-card muted">
-        <div class="perk-icon">📡</div>
-        <div>
-            <p class="perk-type">Previous Credential</p>
-            <h3>Juniper JNCIA-Junos</h3>
-            <p>
-            Expired certification reflecting prior networking study, routing/switching fundamentals,
-            and Juniper platform exposure.
-            </p>
-            <p class="perk-note">Status: Expired</p>
-            <a class="perk-link" href="https://cp.certmetrics.com/juniper/en/public/verify/credential/3EWJN4NQ7N4QQZSR" target="_blank" rel="noopener">
-            Verify credential...
-            </a>
-        </div>
-        </article>
-    </div>
+      </div>
     </section>
 
     <section id="notes" class="section">
