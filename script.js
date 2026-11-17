@@ -210,8 +210,8 @@ if (skillCanvas) {
       kicker: "Certification · Newly unlocked",
       title: "CompTIA Cloud+",
       body: "Cloud architecture, deployment, operations, security, and troubleshooting across hybrid and multi-cloud environments.",
-      href: "https://www.linkedin.com/in/radewey/details/certifications/",
-      linkLabel: "View on LinkedIn..."
+      href: "https://cp.certmetrics.com/CompTIA/en/public/verify/credential/67c372800e1645afa03063c30949a7a1",
+      linkLabel: "Verify credential..."
     },
     azure: {
       glyph: "🔷",
